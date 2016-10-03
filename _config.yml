@@ -11,8 +11,8 @@ email2: miotromail@dcc.uchile.cl
 name: Yo
 description: > 
   Better Sofrware for Better Robots. #SE4Robotics
-baseurl: "/testpage/" # the subpath of your site, e.g. /blog/
-url: "http://rych-uch.github.io" # the base hostname & protocol for your site
+baseurl: 'http://javierdiazp.github.io/robotica-2' # the subpath of your site, e.g. /blog/
+url: 'http://javierdiazp.github.io' # the base hostname & protocol for your site
 #cover: "assets/header_image.jpg"
 cover: "assets/pr2.jpg"
 #logo: "assets/logo.png"
