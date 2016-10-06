@@ -94,3 +94,5 @@ A grandes rasgos el algoritmo utiliza una variable de estado para definir en qu�
 
 
 El siguiente video muestra los resultados del código anterior en ejecución. [El baile de la Tortuga I](https://youtu.be/j6XdlPVipDs) 
+
+Finalmente concluimos que, al menos para realizar una tarea tan básica como esta, ROS se comporta de manera adecuada y tiene las herramientas suficientes para determinar las funcionalidades de los nodos y tópicos de un robot, y comenzar a controlarlo con un script. Sin embargo, es discutible la usabilidad de las herramientas de ROS para realizar estas investigaciones, dado que hay que realizar suposiciones sobre los tópicos, o bien revisar cada uno de ellos para determinar donde se encuentran y cuáles permiten definir el comportamiento del robot.
