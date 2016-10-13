@@ -21,7 +21,7 @@ Permitir que opcionalmente se agregue un comentario con una breve explicación p
 Corregir el autocompletar con tab cuando se utiliza pub con argumentos opcionales
 
 ## Tipo redundante en pub
-Al utilizar rostopic pub es necesario definir el tipo de mensaje, cuando este es estático para la definición del tópico.
+Al utilizar rostopic pub es necesario definir el tipo de mensaje, cuando este es estático para la definición del tópico. (Rellenar con tab por defecto)
 
 ## Rosmsg usa show en vez de info
-Permitir el uso de rosmsg info como alias de rosmsg show para mantener la consistencia con el resto de elementos de ros.
+Permitir el uso de rosmsg info como alias de rosmsg show para mantener la consistencia con el resto de elementos de ros.	
