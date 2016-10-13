@@ -41,8 +41,9 @@ Dadas estas restricciones, el baile diseñado corresponde a formar un triángulo
 Para determinar la distancia que corresponde al ángulo deseado, se realizaron pruebas con diferentes valores hasta lograr que se formara el triángulo.
 
 ## El algoritmo
+
 ### Comunicación con el robot
-Para este cometido se construyó un script (ver código fuente [aquí](https://github.com/javierdiazp/baile/blob/master/src/baile.py) ) que posee un listener suscrito a un tópico llamado Joint States (`/joint_states`) que se encarga de entregar feedback acerca del estado del robot en cuanto a la distancia recorrida y velocidad de cada una de sus ruedas.
+Para este cometido se construyó un script (ver código fuente [aquí](https://github.com/javierdiazp/baile/blob/master/src/baile.py) ) que posee un listener suscrito a Joint States (`/joint_states`) que se encarga de entregar feedback acerca del estado del robot en cuanto a la distancia recorrida y velocidad de cada una de sus ruedas.
 
 Además, de manera global, el script publica en el tópico Teleop (`/cmd_vel_mux/input/teleop`), el cual se encarga de entregar la información de movimiento al robot. Dicha información es una estructura que contiene una velocidad lineal y una angular.
 
