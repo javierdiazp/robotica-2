@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Proyecto: Definición de intenciones"
-date:   2016-10-11 17:00:00
+date:   2016-10-13 17:00:00
 author: Javier Díaz, Patricio Merino
 categories: ROS
 ---
