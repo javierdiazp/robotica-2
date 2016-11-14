@@ -19,6 +19,8 @@ Dividiremos el blog en cuatro partes (incluyendo esta) donde trataremos abiertam
 
 Añadido a esto incluiremos una sección por cada parte de la solución del proyecto donde discutiremos sobre el diseño de esta y, brevemente, sobre la implementación práctica.
 
+Se puede observar el código fuente [aquí](https://github.com/javierdiazp/myros).
+
 ## Problema
 Nuestro proyecto en realidad ataca varios problemas pequeños y localizados en lugar de intentar solucionar uno demasiado grande. Este podría ser descrito de forma general con la siguiente frase: "La línea de comandos que ofrece ROS presenta un conjunto de procedimientos sin la suficiente funcionalidad para adaptarse a nuevos usuarios", a lo que además agregamos que existen errores en ciertos comandos y lógicas que creemos que deberían ser indispensables pero que no están implementadas. 
 
