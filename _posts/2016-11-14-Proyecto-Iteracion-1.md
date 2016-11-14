@@ -11,7 +11,8 @@ categories: ROS
 ## Introducción
 Como hemos visto en entradas anteriores, nuestro proyecto consiste en realizar mejoras a la línea de comando de ROS dado que, en el poco tiempo que hemos trabajado con ella, hemos observado varias tareas que podrían ser mejor facilitadas al usuario, algunos errores (bugs) que impiden usar debidamente los comandos y en general una serie de procesos cuya lógica creemos que debería ser modificada para ajustarse a la perspectiva de lo que espera el usuario novato.
 Este blog se presenta en este contexto, donde nos damos un espacio para explicar los avances realizados en lo que denominamos la primera iteración (de dos) además de contar nuestras experiencias trabajando en el código interno de ROS.
-Dividiremos el blog en cinco partes (incluyendo esta) donde trataremos abiertamente los tópicos que compenden tanto al problema/solución a nivel teórico como a una breve discusión acerca de la implementación práctica, y además hablaremos un poco acerca de cómo queremos hacer llegar nuestras ideas para una posible integración con la versión oficial de ROS.
+Dividiremos el blog en cuatro partes (incluyendo esta) donde trataremos abiertamente los tópicos que compenden al problema a nivel teórico y además hablaremos un poco acerca de cómo queremos hacer llegar nuestras ideas para una posible integración con la versión oficial de ROS.
+Además incluiremos una sección por cada parte de la solución del proyecto donde discutiremos sobre el diseño de esta y, brevemente, sobre la implementación práctica.
 
 ## Problema
 Nuestro proyecto en realidad ataca varios problemas pequeños y localizados en lugar de intentar solucionar uno demasiado grande. Este podría ser descrito de forma general con la siguiente frase: "La línea de comandos que ofrece ROS presenta un conjunto de procedimientos sin la suficiente funcionalidad para adaptarse a nuevos usuarios", a lo que además agregamos que existen errores en ciertos comandos y lógicas que son indispensables pero que no están implementadas. 
@@ -35,11 +36,11 @@ Se procederá a describir cada sub-problema de modo que para efectos de este blo
 8. No existe ninguna manera de añadir alguna explicación al momento de crear nodos y tópicos que permita entender al usuario el objetivo de estos. En su lugar se debe deducir la funcionalidad solamente del nombre.
 
 
-## Solución, diseño e implementación
+## Parte 1: No existe rosmsg info
 
-### Problema 1: No existe rosmsg info
-#### Solución
+### Solución
 Se propone ...
-#### Diseño
 
-#### Implementación
+### Diseño
+
+### Implementación
