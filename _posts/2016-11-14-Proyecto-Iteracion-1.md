@@ -19,8 +19,6 @@ Dividiremos el blog en cuatro partes (incluyendo esta) donde trataremos abiertam
 
 Añadido a esto incluiremos una sección por cada parte de la solución del proyecto donde discutiremos sobre el diseño de esta y, brevemente, sobre la implementación práctica.
 
-Se puede observar el código fuente [aquí](https://github.com/javierdiazp/myros).
-
 ## Problema
 Nuestro proyecto en realidad ataca varios problemas pequeños y localizados en lugar de intentar solucionar uno demasiado grande. Este podría ser descrito de forma general con la siguiente frase: "La línea de comandos que ofrece ROS presenta un conjunto de procedimientos sin la suficiente funcionalidad para adaptarse a nuevos usuarios", a lo que además agregamos que existen errores en ciertos comandos y lógicas que creemos que deberían ser indispensables pero que no están implementadas. 
 
@@ -54,6 +52,7 @@ Para esto se pretende agregar `rosmsg info` en el parser de `rosmsg` y simplemen
 ### Implementación
 Se modificó el archivo `rosmsg/\__init__\.py` donde ahora el comando `info` es parseado como `show` con alias "info", lo que significa que es equivalente salvo por el help.
 
+Se puede observar el código fuente [aquí](https://github.com/javierdiazp/ros_comm/tree/indigo-devel-rosmsg-info).
 
 ## Parte 2: El default de rostopic pub no es -1
 
@@ -69,6 +68,7 @@ Para esto se busca eliminar el delay que existe en el comando y modificar el men
 ### Implementación
 Se modificó el archivo `rostopic/\__init__\.py` cambiando el tiempo de ejecución del comando a una cantidad indiscernible para el ser humano y se imprime en pantalla que la publicación finaliza de inmediato. Esto se realizó así dado que el comando necesita un delay explícito para ser efectivo (con delay 0 no se publica el mensaje).
 
+Se puede observar el código fuente [aquí](https://github.com/javierdiazp/ros_comm/tree/indigo-devel-rostopic-pub-option-1).
 
 ## Parte 3: Se exige tipo de mensaje en rostopic pub
 
@@ -92,6 +92,8 @@ Para esto se pretende modificar el autocompletado con tab de manera que para rel
 Se modificó el archivo `share/rosbash/rosbash` el cual contiene las funciones de autocompletado que son llamadas por la terminal cuando son requeridas. Dicho archivo está en el lenguaje bash el cual representa una dificultad extra a la hora de realizar las modificaciones.
 El cambio en cuestión consistió en preguntar por la existencia anterior del tópico, evitando imprimir el mensaje de error si no existía, para finalmente agregar la nueva opción a partir del tipo entregado por `rostopic info`.
 
+Se puede observar el código fuente [aquí](https://github.com/javierdiazp/ros/tree/indigo-devel-pub-autocomplete-type).
+
 ## Parte 4: Autocompletar de rostopic pub no sirve con opciones
 
 ### Solución
@@ -103,6 +105,7 @@ Para esto se pretende parsear la parte del comando escrito hasta el momento y de
 ### Implementación
 Una consideración a tener en cuenta es que la opción `-r` lleva un argumento, por lo que es parseado de forma especial. Además se contabilizan los índices de manera que se correspondan a la manera en que se hacía en el bash, lo que permite comparar si la palabra actual corresponde o no a un caso de autocompletado.
 
+Se puede observar el código fuente [aquí](https://github.com/javierdiazp/ros/tree/indigo-devel-rostopic-pub-autocomplete-with-options).
 
 ## Parte 5: Difícil saber qué tópicos no tienen subscribers o publishers
 
