@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title:  "Proyecto: Informe Final"
-date:   2017-01-02 20:00:00
+date:   2017-01-02 22:00:00
 author: Javier Díaz, Patricio Merino
 categories: ROS
 ---
